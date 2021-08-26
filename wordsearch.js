@@ -1,10 +1,7 @@
 const wordSearch = (letters, word) => { 
     const horizontalJoin = letters.map(ls => ls.join(''))
     const verticalJoin = letters[0].map((col,index) => letters.map((row) => row[index]).join(''))
-    // const arr
 
-     console.log(verticalJoin)
-    console.log(horizontalJoin)
 
     if (letters === [] || word === ""){
        return false;
